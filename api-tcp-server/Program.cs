@@ -42,7 +42,9 @@ public class Program
                 {
                     using (var tcpStream = client.GetStream())
                     {
+                        // зачитали stream в bytes
                         await tcpStream.ReadAsync(bytes, 0, bytes.Length);
+
                         var requestMessage = Encoding.UTF8.GetString(bytes).Replace("\0", string.Empty);
 
                         if (requestMessage.Equals(TERMINATE))

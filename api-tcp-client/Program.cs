@@ -12,6 +12,7 @@ public class Program
 
         int port = 54321;
         IPAddress address = IPAddress.Parse("127.0.0.1");
+        // отправляемое сообщение специфично, потому что есть delimiter |
         // создаем список сообщений:
         var messages = new string[] {
             "Hello server | return this payload to sender!",
