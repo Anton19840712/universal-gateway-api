@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "api-tcp-server": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
