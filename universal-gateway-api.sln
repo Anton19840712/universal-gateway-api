@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-udp-client", "api-udp-c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcp-worker", "tcp-worker\tcp-worker.csproj", "{95444B94-D853-4664-AF17-7B039D74B357}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcpsocketclient", "tcpsocketclient\tcpsocketclient.csproj", "{B2E65BB9-FA66-4264-BB13-27EDF6079A44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcpsocketserver", "tcpsocketserver\tcpsocketserver.csproj", "{EE3235A6-D201-4153-8956-8B7B3A4C7924}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,14 @@ Global
 		{95444B94-D853-4664-AF17-7B039D74B357}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95444B94-D853-4664-AF17-7B039D74B357}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95444B94-D853-4664-AF17-7B039D74B357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2E65BB9-FA66-4264-BB13-27EDF6079A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E65BB9-FA66-4264-BB13-27EDF6079A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E65BB9-FA66-4264-BB13-27EDF6079A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E65BB9-FA66-4264-BB13-27EDF6079A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE3235A6-D201-4153-8956-8B7B3A4C7924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3235A6-D201-4153-8956-8B7B3A4C7924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3235A6-D201-4153-8956-8B7B3A4C7924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3235A6-D201-4153-8956-8B7B3A4C7924}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +89,8 @@ Global
 		{6E6FF402-CC77-49E5-B20E-D75C970ECDBB} = {7B843821-5FC7-49C4-A1E2-1FDC19143DE1}
 		{0032FB4E-3BC6-4F82-ADCC-24B87A8EB729} = {7B843821-5FC7-49C4-A1E2-1FDC19143DE1}
 		{95444B94-D853-4664-AF17-7B039D74B357} = {2A1F6677-E977-4A60-809B-115D49513EE7}
+		{B2E65BB9-FA66-4264-BB13-27EDF6079A44} = {2A1F6677-E977-4A60-809B-115D49513EE7}
+		{EE3235A6-D201-4153-8956-8B7B3A4C7924} = {2A1F6677-E977-4A60-809B-115D49513EE7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7915CB2-8D81-42B8-A82B-19D841F49D58}
