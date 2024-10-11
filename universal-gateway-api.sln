@@ -3,31 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-sender", "api-sender\api-sender.csproj", "{74A7D316-E439-4505-AE77-1E3A26B89EE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-sender", "api-sender\api-sender.csproj", "{74A7D316-E439-4505-AE77-1E3A26B89EE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-receiver", "api-receiver\api-receiver.csproj", "{992A4FC6-72EC-4E21-BD5B-BD222F6197D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-receiver", "api-receiver\api-receiver.csproj", "{992A4FC6-72EC-4E21-BD5B-BD222F6197D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-udp-console", "api-udp-console\api-udp-console.csproj", "{858E6D91-7116-43BB-85BE-1137CC691AE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-udp-console", "api-udp-console\api-udp-console.csproj", "{858E6D91-7116-43BB-85BE-1137CC691AE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-http3-server", "api-http3-server\api-http3-server.csproj", "{B414675B-BE71-4C67-BAE7-9CBC26BD9A8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-http3-server", "api-http3-server\api-http3-server.csproj", "{B414675B-BE71-4C67-BAE7-9CBC26BD9A8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-tcp-server", "api-tcp-server\api-tcp-server.csproj", "{1E54B754-470A-4BDF-9A98-D24231835677}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-tcp-server", "api-tcp-server\api-tcp-server.csproj", "{1E54B754-470A-4BDF-9A98-D24231835677}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-tcp-client", "api-tcp-client\api-tcp-client.csproj", "{A59AD194-5347-46A8-BEF0-C9FDE5E5F445}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-tcp-client", "api-tcp-client\api-tcp-client.csproj", "{A59AD194-5347-46A8-BEF0-C9FDE5E5F445}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tcp-samples", "tcp-samples", "{2A1F6677-E977-4A60-809B-115D49513EE7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "udp-samples", "udp-samples", "{7B843821-5FC7-49C4-A1E2-1FDC19143DE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-udp-server", "api-udp-server\api-udp-server.csproj", "{6E6FF402-CC77-49E5-B20E-D75C970ECDBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-udp-server", "api-udp-server\api-udp-server.csproj", "{6E6FF402-CC77-49E5-B20E-D75C970ECDBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-udp-client", "api-udp-client\api-udp-client.csproj", "{0032FB4E-3BC6-4F82-ADCC-24B87A8EB729}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-udp-client", "api-udp-client\api-udp-client.csproj", "{0032FB4E-3BC6-4F82-ADCC-24B87A8EB729}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcp-worker", "tcp-worker\tcp-worker.csproj", "{95444B94-D853-4664-AF17-7B039D74B357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tcp-worker", "tcp-worker\tcp-worker.csproj", "{95444B94-D853-4664-AF17-7B039D74B357}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcpsocketclient", "tcpsocketclient\tcpsocketclient.csproj", "{B2E65BB9-FA66-4264-BB13-27EDF6079A44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tcpsocketclient", "tcpsocketclient\tcpsocketclient.csproj", "{B2E65BB9-FA66-4264-BB13-27EDF6079A44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcpsocketserver", "tcpsocketserver\tcpsocketserver.csproj", "{EE3235A6-D201-4153-8956-8B7B3A4C7924}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tcpsocketserver", "tcpsocketserver\tcpsocketserver.csproj", "{EE3235A6-D201-4153-8956-8B7B3A4C7924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "udpclient", "udpclient\udpclient.csproj", "{13091B40-296F-4049-A2D8-9A7BB70AC094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "udpserver", "udpserver\udpserver.csproj", "{F0BA3144-E766-45A9-AFA2-1A73364B2752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +83,14 @@ Global
 		{EE3235A6-D201-4153-8956-8B7B3A4C7924}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE3235A6-D201-4153-8956-8B7B3A4C7924}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE3235A6-D201-4153-8956-8B7B3A4C7924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13091B40-296F-4049-A2D8-9A7BB70AC094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13091B40-296F-4049-A2D8-9A7BB70AC094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13091B40-296F-4049-A2D8-9A7BB70AC094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13091B40-296F-4049-A2D8-9A7BB70AC094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0BA3144-E766-45A9-AFA2-1A73364B2752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0BA3144-E766-45A9-AFA2-1A73364B2752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0BA3144-E766-45A9-AFA2-1A73364B2752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0BA3144-E766-45A9-AFA2-1A73364B2752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +103,8 @@ Global
 		{95444B94-D853-4664-AF17-7B039D74B357} = {2A1F6677-E977-4A60-809B-115D49513EE7}
 		{B2E65BB9-FA66-4264-BB13-27EDF6079A44} = {2A1F6677-E977-4A60-809B-115D49513EE7}
 		{EE3235A6-D201-4153-8956-8B7B3A4C7924} = {2A1F6677-E977-4A60-809B-115D49513EE7}
+		{13091B40-296F-4049-A2D8-9A7BB70AC094} = {7B843821-5FC7-49C4-A1E2-1FDC19143DE1}
+		{F0BA3144-E766-45A9-AFA2-1A73364B2752} = {7B843821-5FC7-49C4-A1E2-1FDC19143DE1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7915CB2-8D81-42B8-A82B-19D841F49D58}

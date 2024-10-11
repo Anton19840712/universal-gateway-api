@@ -2,25 +2,28 @@
 using System.Net;
 using System.Text;
 
-// tcp sample server
+// tcp sample client
 public class Program
 {
     public static async Task Main(string[] args)
     {
-        Console.Title = "Server";
+        Console.Title = "Client";
 
-        using (var client = new UdpClient(45678))
+        using (var client = new UdpClient(34567))
         {
-            IPEndPoint remoteEndpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 34567);
+            var remoteEndpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 45678);
 
-            var incomingMessage = await client.ReceiveAsync();
-            var message = Encoding.UTF8.GetString(incomingMessage.Buffer);
-            Console.WriteLine(message);
+            client.Connect(remoteEndpoint);
 
-            var responseString = $"Packet received from client: {message}";
-            byte[] response = Encoding.UTF8.GetBytes(responseString);
-            await client.SendAsync(response, response.Length, remoteEndpoint);
+            var message = "Testing UDP";
+            byte[] messageBytes = Encoding.UTF8.GetBytes(message);
+            await client.SendAsync(messageBytes, messageBytes.Length);
+
+            var response = await client.ReceiveAsync();
+            var responseMessage = Encoding.UTF8.GetString(response.Buffer);
+            Console.WriteLine(responseMessage);
+
+            Thread.Sleep(5000);
         }
-        Thread.Sleep(5000);
     }
 }
