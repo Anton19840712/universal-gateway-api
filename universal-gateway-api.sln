@@ -35,9 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "udpserver", "udpserver\udps
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "websockets-samples", "websockets-samples", "{1194B8F8-3EED-4B64-866D-92C6223DBB39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-socket-sample", "web-socket-server\web-socket-sample.csproj", "{6C637A06-3284-400F-8BD6-993AC872EB03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web-socket-sample", "web-socket-server\web-socket-sample.csproj", "{6C637A06-3284-400F-8BD6-993AC872EB03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-socket-console-app", "web-socket-console-app\web-socket-console-app.csproj", "{0B31F3ED-34BA-4A2E-9A25-D64C42C574C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web-socket-console-app", "web-socket-console-app\web-socket-console-app.csproj", "{0B31F3ED-34BA-4A2E-9A25-D64C42C574C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "http3-samples", "http3-samples", "{AE5DF4B6-F91C-49BB-BFC2-31C2B89E64D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,6 +112,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{74A7D316-E439-4505-AE77-1E3A26B89EE8} = {7B843821-5FC7-49C4-A1E2-1FDC19143DE1}
+		{992A4FC6-72EC-4E21-BD5B-BD222F6197D4} = {7B843821-5FC7-49C4-A1E2-1FDC19143DE1}
+		{858E6D91-7116-43BB-85BE-1137CC691AE1} = {7B843821-5FC7-49C4-A1E2-1FDC19143DE1}
+		{B414675B-BE71-4C67-BAE7-9CBC26BD9A8F} = {AE5DF4B6-F91C-49BB-BFC2-31C2B89E64D0}
 		{1E54B754-470A-4BDF-9A98-D24231835677} = {2A1F6677-E977-4A60-809B-115D49513EE7}
 		{A59AD194-5347-46A8-BEF0-C9FDE5E5F445} = {2A1F6677-E977-4A60-809B-115D49513EE7}
 		{6E6FF402-CC77-49E5-B20E-D75C970ECDBB} = {7B843821-5FC7-49C4-A1E2-1FDC19143DE1}

@@ -1,54 +1,43 @@
-﻿// Тебе нужно сделать главным приложение web-socket-sample
-// Потом правой кнопкой мыши выбрать проект web-socket-console-app,
-// Выбрать debug и запустить instance приложения... тогда в приложении, которое слушает на порту 52928 будет передано 
-// Отсюда сообщение test
-
-using System.Net.WebSockets;
+﻿using System.Net.WebSockets;
 using System.Text;
 
-// Создаем новый клиент WebSocket
-var wb = new ClientWebSocket();
-
-// Подключаемся к WebSocket-серверу
-// Который у нас создается на фронте socketpage.cshtml
-
-await wb.ConnectAsync(new Uri("ws://localhost:52928/ws"), CancellationToken.None);
-
-// Далее отправляем туда сообщение
-// Отправка сообщения в фоне
-_ = Task.Run(async () =>
+// Основное приложение
+class Program
 {
-    bool off = false;
-    while (!off)
+    static async Task Main(string[] args)
     {
-        if (wb.State == WebSocketState.Open)
-        {
-            // Посылаем сообщение в web socket
-            await wb.SendAsync(
-                Encoding.ASCII.GetBytes("tst"),
-                WebSocketMessageType.Text,
-                true,
-                CancellationToken.None
-            );
-            off = true;
-        }
-    }
-});
+        // Создаем новый клиент WebSocket
+        var wb = new ClientWebSocket();
 
-// Получение сообщения
-bool receiveOff = false;
-while (!receiveOff)
-{
-    if (wb.State == WebSocketState.Open)
-    {
-        byte[] buffer = new byte[1024];
-        var result = await wb.ReceiveAsync(buffer, CancellationToken.None);
-        if (result.MessageType == WebSocketMessageType.Text)
+        // Подключаемся к WebSocket-серверу
+        await wb.ConnectAsync(new Uri("ws://localhost:52928/ws"), CancellationToken.None);
+
+        // Отправка сообщения в фоне
+        _ = Task.Run(async () =>
         {
-            // Читаем сообщение из буфера и печатаем его.
-            Console.WriteLine(Encoding.ASCII.GetString(buffer, 0, result.Count));
+            while (wb.State == WebSocketState.Open)
+            {
+                // Отправляем тестовое сообщение
+                await wb.SendAsync(
+                    Encoding.ASCII.GetBytes("test"),
+                    WebSocketMessageType.Text,
+                    true,
+                    CancellationToken.None
+                );
+            }
+        });
+
+        // Получение сообщения
+        while (wb.State == WebSocketState.Open)
+        {
+            byte[] buffer = new byte[1024];
+            var result = await wb.ReceiveAsync(buffer, CancellationToken.None);
+            if (result.MessageType == WebSocketMessageType.Text)
+            {
+                Console.WriteLine(Encoding.ASCII.GetString(buffer, 0, result.Count));
+            }
         }
+
+        Console.ReadKey();
     }
 }
-
-Console.ReadKey();
