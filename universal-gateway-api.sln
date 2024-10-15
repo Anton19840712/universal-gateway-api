@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "udpserver", "udpserver\udps
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "websockets-samples", "websockets-samples", "{1194B8F8-3EED-4B64-866D-92C6223DBB39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-socket-server", "web-socket-server\web-socket-server.csproj", "{6C637A06-3284-400F-8BD6-993AC872EB03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-socket-sample", "web-socket-server\web-socket-sample.csproj", "{6C637A06-3284-400F-8BD6-993AC872EB03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-socket-console-app", "web-socket-console-app\web-socket-console-app.csproj", "{0B31F3ED-34BA-4A2E-9A25-D64C42C574C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{6C637A06-3284-400F-8BD6-993AC872EB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C637A06-3284-400F-8BD6-993AC872EB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C637A06-3284-400F-8BD6-993AC872EB03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B31F3ED-34BA-4A2E-9A25-D64C42C574C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B31F3ED-34BA-4A2E-9A25-D64C42C574C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B31F3ED-34BA-4A2E-9A25-D64C42C574C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B31F3ED-34BA-4A2E-9A25-D64C42C574C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,6 +120,7 @@ Global
 		{13091B40-296F-4049-A2D8-9A7BB70AC094} = {7B843821-5FC7-49C4-A1E2-1FDC19143DE1}
 		{F0BA3144-E766-45A9-AFA2-1A73364B2752} = {7B843821-5FC7-49C4-A1E2-1FDC19143DE1}
 		{6C637A06-3284-400F-8BD6-993AC872EB03} = {1194B8F8-3EED-4B64-866D-92C6223DBB39}
+		{0B31F3ED-34BA-4A2E-9A25-D64C42C574C0} = {1194B8F8-3EED-4B64-866D-92C6223DBB39}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7915CB2-8D81-42B8-A82B-19D841F49D58}
